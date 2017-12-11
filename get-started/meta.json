@@ -1,0 +1,44 @@
+{
+    "menu": [
+        {
+            "name": "概述",
+            "key": "introduction"
+        },
+        {
+            "name": "准备环境",
+            "key": "prepare"
+        },
+        {
+            "name": "查看主页",
+            "key": "homepage"
+        },
+        {
+            "name": "创建新页面和链接",
+            "key": "new-page-and-link"
+        },
+        {
+            "name": "发送请求",
+            "key": "request"
+        },
+        {
+            "name": "使用 Vuex 管理数据",
+            "key": "vuex"
+        },
+        {
+            "name": "配置 Manifest",
+            "key": "manifest"
+        },
+        {
+            "name": "编写 Service Worker",
+            "key": "service-worker"
+        },
+        {
+            "name": "构建代码和上线",
+            "key": "build-start"
+        }
+    ],
+    "ignore": [
+        "koa",
+        "multi-entry"
+    ]
+}
