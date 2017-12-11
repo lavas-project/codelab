@@ -1,5 +1,4 @@
 # codelab for Lavas
-=========
 
 Learn and take Lavas into practise!
 
