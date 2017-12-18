@@ -1,0 +1,39 @@
+{
+    "menu": [
+        {
+            "name": "",
+            "key": "01introduction"
+        },
+        {
+            "name": "准备及开发步骤",
+            "key": "02prepare"
+        },
+        {
+            "name": "添加中间件文件",
+            "key": "03add-middleware"
+        },
+        {
+            "name": "添加简单登录页面",
+            "key": "04add-login-page"
+        },
+        {
+            "name": "store 中添加登录状态管理",
+            "key": "05add-store"
+        },
+        {
+            "name": "配置 middleware",
+            "key": "06config-middleware"
+        },
+        {
+            "name": "测试验证",
+            "key": "07test-middleware"
+        }
+    ],
+    "ignore": [],
+    "info": {
+        "name": "Middleware 开发和使用",
+        "description": "本示例功能是基于 lAVAS 2.0 的初始项目，添加一个用户登录验证的中间件，结合文档教程可以快速掌握中间件的开发和使用。",
+        "tag": ["Lavas 2.0", "middleware"],
+        "duration": "30分钟"
+    }
+}
