@@ -1,8 +1,11 @@
 # 2. 准备及开发流程
 
-## 1. 基于 Lavas 2.0 初始化一个项目，本实例中初始化项目名为 lavas-middleware
 
-    具体步骤可参考 ![Lavas 2.0 中准备环境](https://lavas.baidu.com/codelab/get-started/prepare) 一节
+## 简单总结了一下几步：
+
+（1）基于 Lavas 2.0 初始化一个项目，本示例中初始化项目名为 lavas-middleware
+
+    具体步骤可参考 [Lavas 2.0 中准备环境](https://lavas.baidu.com/codelab/get-started/prepare) 一节
 
     ``` bash
 
@@ -15,7 +18,7 @@
     ![img](http://boscdn.bpc.baidu.com/assets/lavas/codelab/home-page.png)
 
 
-## 2. 打开项目文件夹，我们发现根目录下有 `/middlewares` 的文件夹，我们自定义的中间件都要放在该文件下，对应生成的中间件名称就是'login'
+（2）打开项目文件夹，我们发现根目录下有 `/middlewares` 的文件夹，我们自定义的中间件都要放在该文件下，对应生成的中间件名称就是 `login`
 
 ``` js
 lavas-middleware
@@ -24,7 +27,7 @@ lavas-middleware
 
 ```
 
-## 3. 写好中间件以后，还需要在 `lavas.config.js` 中完成配置，或是在具体的 `.vue` 文件中配置，才能生效哦！
+（3）写好中间件以后，还需要在 `lavas.config.js` 中完成配置，或是在具体的 `.vue` 文件中配置，才能生效哦！
 
 
 > info

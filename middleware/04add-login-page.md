@@ -15,7 +15,7 @@ lavas-middleware
 ```
 
 
-### （1）添加登录页 `./pages/login.vue`
+（1）添加登录页 `./pages/login.vue`
 
 ``` html
 
@@ -71,16 +71,14 @@ button
 
 ```
 
-### （2）访问 localhost:3000/login 即可看到添加的登录页啦！可以在首页增加到登录页的跳转，便于后续测试
+（2）访问 localhost:3000/login 即可看到添加的登录页啦！可以在首页增加到登录页的跳转，便于后续测试
 
 ![登录页](http://boscdn.bpc.baidu.com/assets/lavas/codelab/login-page.png)
-
-![Lavas页](http://boscdn.bpc.baidu.com/assets/lavas/codelab/home-page.png)
-
 
 > info
 >
 > 登录页添加完成
+>
 > 下一节我们根据需求添加具体的 store 文件，来管理我们的登录状态
 
 

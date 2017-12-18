@@ -15,7 +15,7 @@ lavas-middleware
 ```
 
 
-###（1）添加 `./store/common.js` 文件，state 中添加了 login 参数，可以供前端跳转验证登陆状态，另外还有两个 actions:
+（1）添加 `./store/common.js` 文件，state 中添加了 login 参数，可以供前端跳转验证登陆状态，另外还有两个 actions:
 
 - setLogin() 供前端模拟登录使用，登录页 “点击登录” 按钮，则将 login 改为 true；
 - validLogin() 供服务端模拟登录验证使用，可向服务端验证登录情况，并设置 login 值，此处为了方便直接模拟未登录，直接将 login 设置为 false;
@@ -60,6 +60,7 @@ export const actions = {
 > info
 >
 > store 文件添加完成
+>
 > 下一节我们将写好的中间件进行简单的配置，即可测试了
 
 

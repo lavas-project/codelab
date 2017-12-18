@@ -14,7 +14,7 @@ lavas-middleware
 ```
 
 
-###（1）添加浏览器端中间件 `./middlewares/login-client.js`，中间件的输入参数，可以在 `./core/middleware.js` 里的 getClientContext() 方法中查看或扩展 ctx ；
+（1）添加浏览器端中间件 `./middlewares/login-client.js`，中间件的输入参数，可以在 `./core/middleware.js` 里的 getClientContext() 方法中查看或扩展 ctx ；
 
 ``` js
 
@@ -35,7 +35,7 @@ export default function ({store, redirect, route}) {
 
 ```
 
-###（2）添加服务器端中间件 `./middlewares/login-server.js`，中间件的输入参数，可以在 `./core/middleware.js` 里的 getServerContext() 方法中查看或扩展 ctx ；
+（2）添加服务器端中间件 `./middlewares/login-server.js`，中间件的输入参数，可以在 `./core/middleware.js` 里的 getServerContext() 方法中查看或扩展 ctx ；
 
 ``` js
 
@@ -63,6 +63,7 @@ export default async function ({store, redirect, req}) {
 > info
 >
 > 两个中间件添加已经完成啦
+>
 > 下一节我们将添加一个简单的登录页面，满足重定向需求
 
 
