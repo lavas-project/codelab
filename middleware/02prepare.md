@@ -15,8 +15,6 @@ npm run dev
 ```
 起服务，查看 localhost:3000 可以看到如下图的一个初始化 Lavas 首页，恭喜你第一步已经完成啦！
 
-![img](http://boscdn.bpc.baidu.com/assets/lavas/codelab/home-page.png)
-
 
 （2）打开项目文件夹，我们发现根目录下有 `/middlewares` 的文件夹，我们自定义的中间件都要放在该文件下，对应生成的中间件名称就是 `login`
 

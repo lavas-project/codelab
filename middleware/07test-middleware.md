@@ -10,9 +10,6 @@
 
 - 再次点击 “LAVAS” 首页链接访问首页。浏览器端中间件 login-client 将再次被执行，此时 store 中的登录状态为 true，所以成功跳转至首页。
 
-![](http://boscdn.bpc.baidu.com/assets/lavas/codelab/login.mp4)
-
-
 - 此外，您还可以修改 store 中的 validLogin() 部分进行模拟服务端验证登陆成功的情况，再次访问 'localhost:3000' 首页，发现可以直接进入，前端跳转也正常完成。
 
 
