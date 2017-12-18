@@ -3,9 +3,7 @@
 
 ## 简单总结了以下几步：
 
-（1）基于 Lavas 2.0 初始化一个项目，本示例中初始化项目名为 lavas-middleware
-
-具体步骤可参考 [Lavas2.0中准备环境](https://lavas.baidu.com/codelab/get-started/prepare) 一节
+（1）基于 Lavas 2.0 初始化一个项目，本示例中初始化项目名为 lavas-middleware，具体步骤可参考 [Lavas 2.0 中准备环境](https://lavas.baidu.com/codelab/get-started/prepare) 一节
 
 ``` bash
 
