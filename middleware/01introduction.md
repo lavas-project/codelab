@@ -12,9 +12,9 @@
 - Vue + SSR 等相关知识
 
 
-## 下载本示例的完整 zip 包
+## 点击下载本示例的完整 zip 包
 
-[DOWNLOAD ZIP](./lavas-middleware.zip)
+[DOWNLOAD ZIP](/lavas-project/codelab/raw/master/middleware/lavas-middleware.zip)
 
 > info
 >
