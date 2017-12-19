@@ -9,9 +9,9 @@
 
 module.exports = {
     middleware: {
-        all: [],
-        server: ['login-server'],
-        client: ['login-client']
+        all: [], // 前后端均执行
+        server: ['login-server'], // 仅服务器端执行
+        client: ['login-client']  // 仅浏览器端执行
     }
 };
 
