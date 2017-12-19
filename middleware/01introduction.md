@@ -14,7 +14,7 @@
 
 ## 点击下载本示例的完整 zip 包
 
-[DOWNLOAD ZIP](/lavas-project/codelab/raw/master/middleware/lavas-middleware.zip)
+[DOWNLOAD ZIP](https://github.com/lavas-project/codelab/raw/master/middleware/lavas-middleware.zip)
 
 > info
 >
