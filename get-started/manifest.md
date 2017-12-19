@@ -61,15 +61,15 @@
 
 5. 打开手机中支持 PWA 特性的浏览器 (推荐 Google Chrome)，输入 URL `localohst:3000`，能够展现首页的话，在右上角菜单中也可以看到“添加到主屏幕”
 
-    ![mobile-1](http://boscdn.bpc.baidu.com/assets/lavas/codelab/step7-mobile-1.png)
+    ![mobile-1](http://boscdn.bpc.baidu.com/assets/lavas/codelab/step7-mobile-1-2.png)
 
 6. 添加完成后，在手机桌面上就可以看到新增的图标了
 
-    ![mobile-2](http://boscdn.bpc.baidu.com/assets/lavas/codelab/step7-mobile-2.png)
+    ![mobile-2](http://boscdn.bpc.baidu.com/assets/lavas/codelab/step7-mobile-2-2.png)
 
 7. 点击这个新的图标，在短暂的过场动画后，会直接展现页面，没有浏览器的显示框架，Cooooooooool!!!!
 
-    ![mobile-3](http://boscdn.bpc.baidu.com/assets/lavas/codelab/step7-mobile-3.png)
+    ![mobile-3](http://boscdn.bpc.baidu.com/assets/lavas/codelab/step7-mobile-3-2.png)
 
 这里有两个注意点：
 
