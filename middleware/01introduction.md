@@ -14,7 +14,7 @@
 
 ## 下载本示例的完整 zip 包
 
-![DOWNLOAD ZIP](./lavas-middleware.zip)
+[DOWNLOAD ZIP](./lavas-middleware.zip)
 
 > info
 >
