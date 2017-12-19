@@ -11,11 +11,6 @@
 - Vue, Vuex, Vue-router 等基本的开发知识
 - Vue + SSR 等相关知识
 
-
-## 点击下载本示例的完整 zip 包
-
-[DOWNLOAD ZIP](https://github.com/lavas-project/codelab/raw/master/middleware/lavas-middleware.zip)
-
 > info
 >
 > 开始前，我们需要完成改一些准备工作，并了解我们的基本开发流程
