@@ -2,9 +2,10 @@
 
 ## 登录页功能
 
-- 提供一个简单的 “点击登录” 按钮，点击可以将 store 中的登录状态改为 true；
+- 提供一个简单的 “点击登录” 按钮，点击可以将 store 中的登录状态改为 true
 - 提供一个前端跳转回到 Lavas 主页按钮，点击该按钮后，如果登录成功可以跳转至主页，否则还会重定向至登录页
-- 具体文件结构和代码如下
+
+具体文件结构和代码如下
 
 ``` js
 
@@ -38,11 +39,11 @@ export default {
             // 如果未登录，设置登录成功
             if (!this.$store.state.common.login) {
 
-                // 修改 store 中的登陆状态为 true
+                // 修改 store 中的登录状态为 true
                 await this.$store.dispatch('common/setLogin', true);
                 this.$refs.tips.innerHTML = 'tips：登录成功';
             }
-            // 如果登陆显示已登录
+            // 如果登录显示已登录
             else {
                 this.$refs.tips.innerHTML = 'tips：已登录';
             }
@@ -71,7 +72,8 @@ button
 
 ```
 
-（2）访问 localhost:3000/login 即可看到添加的登录页啦！可以在首页增加到登录页的跳转，便于后续测试
+
+（2）访问 localhost:3000/login 即可看到添加的登录页啦，也可以在首页增加到登录页的跳转，便于后续测试。
 
 
 > info
