@@ -1,6 +1,6 @@
 # 3. 查看主页
 
-根目录下的 `/pages` 文件夹用于存放路由组件，Lavas 会自动根据文件结构创建路由规则，生成方法可以查看[文档](/v2/basic/init#Lavas-自动路由生成方法)。
+根目录下的 `/pages` 文件夹用于存放路由组件，Lavas 会自动根据文件结构创建路由规则，生成方法可以查看[文档](/guide/v2/basic/init#Lavas-自动路由生成方法)。
 
 在初始模板中，`pages` 中如下的文件结构将生成三条路由规则：`/appshell/main`, `/` 和 `/error`。之前我们访问的主页对应着 `Index.vue`。另外，可以发现单页面组件的名称遵循了 Pascal 命名规范，这是 Vue 的编码规范推荐的[形式之一](https://vuejs.org/v2/style-guide/#Single-file-component-filename-casing-strongly-recommended)。
 ```

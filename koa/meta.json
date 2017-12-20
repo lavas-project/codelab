@@ -1,0 +1,23 @@
+{
+    "menu": [
+        {
+            "name": "概述",
+            "key": "01introduction"
+        },
+        {
+            "name": "准备环境",
+            "key": "02preparation"
+        },
+        {
+            "name": "使用 Koa 作为开发服务器",
+            "key": "03koa-dev-server"
+        }
+    ],
+    "ignore": [],
+    "info": {
+        "name": "使用 Koa 作为服务器",
+        "description": "本示例功能基于 Lavas 2.0 初始化项目，将演示如何使用 Koa 作为服务器。",
+        "tag": ["Lavas 2.0", "Koa"],
+        "duration": "10分钟"
+    }
+}
