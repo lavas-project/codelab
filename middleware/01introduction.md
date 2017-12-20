@@ -11,6 +11,17 @@
 - Vue, Vuex, Vue-router 等基本的开发知识
 - Vue + SSR 等相关知识
 
+## [下载示例代码](http://boscdn.bpc.baidu.com/assets/lavas/codelab/lavas-middleware.zip)
+
+``` bash
+
+npm install
+
+npm run dev
+
+```
+
+
 > info
 >
 > 开始前，我们需要完成改一些准备工作，并了解我们的基本开发流程
