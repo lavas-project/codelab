@@ -1,0 +1,19 @@
+{
+    "menu": [
+        {
+            "key": "get-start"
+        },
+        {
+            "key": "middleware"
+        },
+        {
+            "key": "koa"
+        }
+    ],
+    "ignore": [
+        "README"
+    ],
+    "info": {
+        "name": "CODELAB"
+    }
+}
