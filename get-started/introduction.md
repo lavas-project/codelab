@@ -22,11 +22,10 @@ Lavas 是一套基于 Vue 的 PWA 解决方案，可以帮助开发者快速搭�
 * HTML, CSS(less或stylus), JavaScript 等前端编程基础
 * ES6/7 部分常用语法，如 Promise, import/export 等
 * Vue, Vuex, Vue-router 等基本的开发知识
-* PWA 和 Service Worker 的基本知识，如生命周期，缓存能力等 （__推荐__）
-* Webpack, Node.js, Koa 等基本知识 （__推荐__）
+* Webpack, Node.js 等基本知识 （__推荐__）
 
 ## 在开发前您需要准备
 
 * 一台可以正常联网的计算机并已安装较新版本的 Node.js (≥ 5.0) 和 npm (≥ 3.0)
-* 一个支持 Service Worker 的浏览器，推荐使用 Google Chrome
+* 一个方便调试并支持 Service Worker 的浏览器，推荐使用 Google Chrome
 * 一个自己习惯的文本编辑器，如 Sublime Text, Web Storm 等等

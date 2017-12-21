@@ -1,0 +1,27 @@
+{
+    "menu": [
+        {
+            "name": "概述",
+            "key": "introduction"
+        },
+        {
+            "name": "准备环境",
+            "key": "prepare"
+        },
+        {
+            "name": "SSR 模式下单入口应用的 App Shell",
+            "key": "ssr-single-entry"
+        },
+        {
+            "name": "SSR 模式下多入口应用的 App Shell",
+            "key": "ssr-multi-entry"
+        }
+    ],
+    "ignore": [],
+    "info": {
+        "name": "为 Lavas 应用配置 App Shell",
+        "description": "本示例为不同渲染模式的 Lavas 应用配置 App Shell，使其具有更顺滑的加载体验",
+        "tag": ["Lavas 2.0", "Service Worker", "App Shell"],
+        "duration": "1小时"
+    }
+}

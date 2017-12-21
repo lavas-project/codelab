@@ -29,7 +29,7 @@
             "key": "manifest"
         },
         {
-            "name": "编写 Service Worker",
+            "name": "配置 Service Worker",
             "key": "service-worker"
         },
         {
@@ -38,7 +38,6 @@
         }
     ],
     "ignore": [
-        "koa",
         "multi-entry"
     ],
     "info": {

@@ -1,12 +1,12 @@
 # 8. 编写 Service Worker
 
-这一部分我们只列出一些最基本的 Service Worker 的配置方法，有关 Service Worker 更详细的介绍可以移步 Lavas 官网的[什么是 Service Worker](https://lavas.baidu.com/doc/offline-and-cache-loading/service-worker/service-worker-introduction) 和 Lavas 文档的 [Service Worker 部分](/guide/v2/advanced/service-worker)。
+这一部分我们只列出一些最基本的 Service Worker 的配置方法，有关 Service Worker 更详细的介绍可以移步 Lavas 官网的[什么是 Service Worker](https://lavas.baidu.com/doc/offline-and-cache-loading/service-worker/service-worker-introduction) 和 Lavas 文档的 [Service Worker 部分](/guide/v2/advanced/service-worker)。此外由于 App Shell 模型和骨架屏 (Skeleton) 比较复杂，我们单独编写了一套 [Codelab](/codelab/appshell/introduction) 来介绍，这里就不再涉及了。
 
 初始化生成的项目默认已经带有 Service Worker，我们来查看一下加深了解。Lavas 的 Service Worker 可以分为两部分：__配置部分__和__模板部分__。
 
 ## Service Worker 配置项
 
-首先打开根目录下的 `lavas.config.js`，关注 `serviceWorker` 这一段，如下：
+首先打开根目录下的 `/lavas.config.js`，关注 `serviceWorker` 这一段，如下：
 
 ```javascript
 module.exports = {
@@ -30,6 +30,8 @@ module.exports = {
 ```
 
 这些配置项都是必填项，具体每一项的含义和配置方法可以参考 Lavas 文档的 [Service Worker 部分](/guide/v2/advanced/service-worker)。大致来说，这里配置了 Service Worker 模板所在位置，最终 js 生成位置，预缓存静态文件的覆盖范围等等。如上的配置将 `html`, `js`, `css`, `eot`, `svg`, `ttf`, `woff` 等各类静态资源加入预缓存文件，但是将 `sw-register.js` 和 `map` 排除在外。
+
+`appshellUrls` 配置项和 App Shell 有关，这里先忽略。
 
 ## Service Worker 模板
 

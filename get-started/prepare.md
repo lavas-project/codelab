@@ -25,6 +25,6 @@
     lavas dev
     ```
 
-默认启动 express 作为开发服务器，Koa 的使用例子将在其他 codelab 教程中给出，敬请期待。
+默认启动 express 作为开发服务器。如果您想使用 Koa 作为服务器进行开发和上线，可以参考 [使用 Koa 作为服务器](/codelab/koa/introduction)。
 
 接下来我们会通过一些代码的修改来进一步加深印象，了解 Lavas 的主要功能。
