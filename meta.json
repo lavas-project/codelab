@@ -1,13 +1,16 @@
 {
     "menu": [
         {
-            "key": "get-start"
+            "key": "get-started"
         },
         {
             "key": "middleware"
         },
         {
             "key": "koa"
+        },
+        {
+            "key": "appshell"
         }
     ],
     "ignore": [
