@@ -31,7 +31,7 @@ export default {
 </script>
 ```
 
-这一段最重要的是 `metaInfo` 中的 `bodyAttrs['empty-appshell']`，虽然值是 `undefined`，但因为 Lavas 的内部机制这段__不能删除__，否则将导致 App Shell 无法工作。其余部分都可以根据开发者项目的具体情况自行修改。一般来说 App Shell 的 `<template>` 都是空的。([原因？](/guide/v2/advanced/appshell#编写-App-Shell))
+这一段最重要的是 `metaInfo` 中的 `bodyAttrs['empty-appshell']`，虽然值是 `undefined`，但因为 Lavas 的内部机制这段__不能删除__，否则将导致 App Shell 无法工作。其余部分都可以根据开发者项目的具体情况自行修改。一般来说 App Shell 的 `<template>` 留空就可以。([原因？](/guide/v2/advanced/appshell#Skeleton-和-App-Shell-的差异))
 
 ## Service Worker 配置
 

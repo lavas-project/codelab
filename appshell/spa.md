@@ -2,7 +2,7 @@
 
 虽然这篇 Codelab 的目的是为 Lavas 应用添加 App Shell，但严格来说，在 SPA/MPA 等前端渲染的情况下，我们可以采用更为简便的骨架屏 (Skeleton) 的方式来实现相同的功能。不过因为实际效果都是在加载页面时使用一些填充内容来替换白屏，所以就粗略地统一简称 App Shell 了。
 
-关于骨架屏的概念可以参考 Lavas 的知乎专栏的[为 Vue 项目添加骨架屏](https://zhuanlan.zhihu.com/p/28465598)一文，也可以参考 Lavas 文档的 [App Shell 部分](/guide/v2/advanced/appshell)。这里会列出 SPA 和 MPA 两种模式下最基本的 Skeleton 配置方法。
+关于骨架屏的概念可以参考 Lavas 的知乎专栏的[为 Vue 项目添加骨架屏](https://zhuanlan.zhihu.com/p/28465598)一文，也可以参考 Lavas 文档的 [Skeleton 和 App Shell 模型](/guide/v2/advanced/appshell)。这里会列出 SPA 和 MPA 两种模式下最基本的 Skeleton 配置方法。
 
 为了方便表述，我们假设整个项目只有一个入口 `main`，所有的路由规则都经过这个入口。
 
