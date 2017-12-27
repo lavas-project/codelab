@@ -38,15 +38,15 @@ Fast - Respond quickly to user interactions with silky smooth animations and no 
 <script>
 export default {
     name: 'detail-_id',
-    head() {
+    metaInfo() {
         return {
-            title: `Detail ${this.$route.params.id}`,
+            title: `Lavas Sample Detail ${this.$route.params.id}`,
             titleTemplate: '%s - Lavas',
             meta: [
-                {name: 'keywords', content: `detail ${this.$route.params.id}`},
-                {name: 'description', content: `detail ${this.$route.params.id}`}
+                {name: 'keywords', content: `Lavas Sample Detail`},
+                {name: 'description', content: `Lavas Sample Detail ${this.$route.params.id}`}
             ]
-        };
+        }
     }
 };
 </script>
