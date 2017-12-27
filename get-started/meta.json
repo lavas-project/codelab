@@ -37,9 +37,6 @@
             "key": "build-start"
         }
     ],
-    "ignore": [
-        "multi-entry"
-    ],
     "info": {
         "name": "开发第一个 Lavas 应用",
         "description": "使用 Lavas 2.0 版本开发第一个 Lavas PWA 应用。除了页面、路由等基本功能之外，也包含 manifest, Service Worker等 PWA 相关的功能。",
