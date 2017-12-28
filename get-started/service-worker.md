@@ -22,7 +22,7 @@ module.exports = {
             'sw-register.js',
             '**/*.map'
         ],
-        appshellUrls: ['/appshell/index'],
+        appshellUrls: ['/appshell'],
         dontCacheBustUrlsMatching: /\.\w{8}\./
     },
     // ...
@@ -51,7 +51,7 @@ const workboxSW = new WorkboxSW({
 workboxSW.precache([]);
 
 // Define response for HTML request.
-workboxSW.router.registerNavigationRoute('/appshell/index');
+workboxSW.router.registerNavigationRoute('/appshell');
 ```
 
 默认情况下，Service Worker 的模板为我们完成了：

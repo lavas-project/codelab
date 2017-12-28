@@ -6,7 +6,7 @@
 
 ## 编写 App Shell
 
-首先我们需要为所有页面开发一个 App Shell ([这是什么？](/guide/v2/advanced/appshell))。我们创建一个 `/pages/appshell/Index.vue`，并编写如下内容：
+首先我们需要为所有页面开发一个 App Shell ([这是什么？](/guide/v2/advanced/appshell))。我们创建一个 `/pages/Appshell.vue`，并编写如下内容：
 
 ```
 <template>
@@ -14,7 +14,7 @@
 
 <script>
 export default {
-    name: 'appshell-index',
+    name: 'appshell',
     metaInfo: {
         title: 'Lavas',
         meta: [
@@ -40,7 +40,7 @@ module.exports = {
     // ...
     serviceWorker: {
         // other service worker config
-        appshellUrls: ['/appshell/index']
+        appshellUrls: ['/appshell']
     },
     // ...
 };
@@ -54,9 +54,9 @@ Service Worker 模板位于 `/core/service-worker.js`，在这里我们将注册
 
 ```javascript
 // Define response for HTML request.
-workboxSW.router.registerNavigationRoute('/appshell/index');
+workboxSW.router.registerNavigationRoute('/appshell');
 ```
 
-和 App Shell 相关的只有 `registerNavigationRoute` 这一句。这句的作用是将所有 HTML 请求 (`request.mode === 'navigate'`) 由 Service Worker 进行拦截，使用参数中注册的 App Shell 进行返回。这里注册的 `'/appshell/index'` __必须__ 包含在 Service Worker 配置项 `appshellUrls` 数组中，否则将无法注册成功。
+和 App Shell 相关的只有 `registerNavigationRoute` 这一句。这句的作用是将所有 HTML 请求 (`request.mode === 'navigate'`) 由 Service Worker 进行拦截，使用参数中注册的 App Shell 进行返回。这里注册的 `'/appshell'` __必须__ 包含在 Service Worker 配置项 `appshellUrls` 数组中，否则将无法注册成功。
 
 经过这些配置，我们的应用已经实现了 App Shell。在首次被访问时，会将 App Shell 缓存起来，并在后续访问时直接从缓存取出并返回，大大提升了响应速度，提供更顺滑的加载体验！
