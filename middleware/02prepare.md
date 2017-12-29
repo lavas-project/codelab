@@ -14,7 +14,7 @@ npm run dev
 起服务，查看 localhost:3000 可以得到一个初始化 Lavas 首页，恭喜你第一步已经完成啦！
 
 
-（2）根目录下查看 `lavas.config.js` 文件，查看 entry 配置项。
+（2）根目录下查看 `lavas.config.js` 文件，查看 router 配置项。
 
 - 初始化项目默认是开启 SSR 模式，即页面首屏渲染为服务端渲染
 - 若不想采用纯前端渲染，可以将这里设置为 false
@@ -24,24 +24,18 @@ npm run dev
 ``` js
 
 module.exports = {
-    entry: [
-        {
-            name: 'main',
-            ssr: true, // 首屏服务端渲染
-            mode: 'history',
-            base: '/',
-            routes: /^.*$/,
-            pageTransition: {
-                type: 'fade',
-                transitionClass: 'fade'
-            }
+    router: {
+        ssr: true, // 首屏服务端渲染
+        mode: 'history',
+        base: '/',
+        pageTransition: {
+            type: 'fade',
+            transitionClass: 'fade'
         }
-    ],
-    ...
+    }
 };
 
 ```
-
 
 
 （3）打开项目文件夹，我们发现根目录下有 `/middlewares` 文件夹，自定义的中间件都要放在该文件下，才可能被导入执行

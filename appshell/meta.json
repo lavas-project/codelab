@@ -9,19 +9,19 @@
             "key": "prepare"
         },
         {
-            "name": "SSR 模式下单入口应用的 App Shell",
-            "key": "ssr-single-entry"
+            "name": "SSR 模式的 App Shell",
+            "key": "ssr"
         },
         {
-            "name": "SSR 模式下多入口应用的 App Shell",
-            "key": "ssr-multi-entry"
+            "name": "SPA 的 Skeleton",
+            "key": "spa"
         }
     ],
     "ignore": [],
     "info": {
-        "name": "为 Lavas 应用配置 App Shell",
-        "description": "本示例为不同渲染模式的 Lavas 应用配置 App Shell，使其具有更顺滑的加载体验",
-        "tag": ["Lavas 2.0", "Service Worker", "App Shell"],
-        "duration": "1小时"
+        "name": "Lavas 的 Skeleton 和 App Shell",
+        "description": "本示例为不同渲染模式的 Lavas 应用配置 Skeleton 或 App Shell，使其具有更顺滑的加载体验",
+        "tag": ["Lavas 2.0", "Service Worker", "Skeleton", "App Shell"],
+        "duration": "30分钟"
     }
 }

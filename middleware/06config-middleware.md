@@ -33,7 +33,7 @@ export default {
 
 ```
 
-如果您想更深入的了解前后端中间件的导入执行顺序可分别在 `./entries/main/entry-client.js` 、`./core/entry-server.js` 中查看。
+如果您想更深入的了解前后端中间件的导入执行顺序可分别在 `./core/entry-client.js` 、`./core/entry-server.js` 中查看。
 
 > info
 >
