@@ -18,7 +18,7 @@ lavas-middleware
 ```
 
 
-（1）添加浏览器端中间件 `./middlewares/login-client.js`，中间件的输入参数，可以在 `./core/middleware.js` 里的 getClientContext() 方法中查看或扩展 ctx ；
+（1）添加浏览器端中间件 `./middlewares/login-client.js`，中间件的输入参数，可以在 `./.lavas/middleware.js` 里的 getClientContext() 方法中查看。如果需要扩展参数，可以单独在 `./core/entry-server.js`、 `./core/entry-client.js` 中引入自定义的文件（注意只需基于 `./.lavas/middleware.js` 文件，修改 getClientContext() 即可）；；
 
 ``` js
 
@@ -39,7 +39,7 @@ export default function ({store, redirect, route}) {
 
 ```
 
-（2）添加服务器端中间件 `./middlewares/login-server.js`，中间件的输入参数，可以在 `./core/middleware.js` 里的 getServerContext() 方法中查看或扩展 ctx ；
+（2）添加服务器端中间件 `./middlewares/login-server.js`，中间件的输入参数，可以在 `./.lavas/middleware.js` 里的 getServerContext() 方法中查看。如果需要扩展参数，可以单独在 `./core/entry-server.js`、 `./core/entry-client.js` 中引入自定义的文件（注意只需基于 `./.lavas/middleware.js` 文件，修改 getServerContext() 即可）；
 
 ``` js
 
