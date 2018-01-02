@@ -11,7 +11,7 @@
 - Vue, Vuex, Vue-router 等基本的开发知识
 - Vue + SSR 等相关知识
 
-## [下载示例代码](http://boscdn.bpc.baidu.com/assets/lavas/codelab/lavas-middleware.zip)
+## [下载示例代码](https://boscdn.baidu.com/assets/lavas/codelab/lavas-middleware.zip)
 
 ``` bash
 
