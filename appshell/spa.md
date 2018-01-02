@@ -1,4 +1,4 @@
-# 5. SPA 的 Skeleton
+# 4. SPA 的 Skeleton
 
 关于骨架屏 (Skeleton) 的概念可以参考 Lavas 的知乎专栏的[为 Vue 项目添加骨架屏](https://zhuanlan.zhihu.com/p/28465598)一文，也可以参考 Lavas 文档的 [Skeleton 和 App Shell 模型](/guide/v2/advanced/appshell)。这里会列出 SPA 模式下最基本的 Skeleton 配置方法。
 

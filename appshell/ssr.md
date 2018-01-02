@@ -2,7 +2,7 @@
 
 由于通过 `lavas init` 命令初始化的项目是采用服务端渲染 (SSR) 模式的，因此我们先关注 SSR 模式的 App Shell 。如果您想了解 SPA 模式，可以直接跳转到[这里](/codelab/service-worker/spa-mpa-config)。
 
-![SSR App Shell](http://boscdn.bpc.baidu.com/assets/lavas/codelab/appshell.png)
+![SSR App Shell](https://boscdn.baidu.com/assets/lavas/codelab/appshell.png)
 
 ## 编写 App Shell
 
