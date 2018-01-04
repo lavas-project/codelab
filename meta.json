@@ -14,7 +14,8 @@
         }
     ],
     "ignore": [
-        "README"
+        "README",
+        "1-to-2"
     ],
     "info": {
         "name": "CODELAB"
