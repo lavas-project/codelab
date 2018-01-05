@@ -15,6 +15,12 @@ lavas build
 完成后，在项目根目录下会生成一个 `/dist` 目录，这边是构建后的项目代码。我们还可以通过命令
 
 ```bash
+npm install
+```
+
+来安装所有依赖，并使用 Lavas 内置命令
+
+```bash
 lavas start
 ```
 
