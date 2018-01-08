@@ -33,7 +33,7 @@ Skeleton.vue 按照普通 Vue 页面组件的开发方式进行开发即可。�
 
 通过 webpack 的构建，Skeleton.vue 的内容会直接编译到 `/dist/index.html` 中。因此针对 Service Worker 无需做什么特别的配置。
 
-尤其需要注意的是，SSR 模式使用的 `appshellUrls` __不能使用__，否则会导致 Service Worker 尝试访问这个地址并缓存，但实际上这个地址并不能访问。
+尤其需要注意的是，SSR 模式使用的 `appshellUrl` __不能使用__，否则会导致 Service Worker 尝试访问这个地址并缓存，但实际上这个地址并不能访问。
 
 ## Service Worker 模板
 
