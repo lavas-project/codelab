@@ -93,6 +93,6 @@ export default {
 
 经过两个简单的步骤，我们的第二个页面也完成了！保存文件，使用 `npm run dev` 启动项目之后，通过浏览器访问 localhost:3000/detail/1 即可看到这个新增的详情页面。
 
-![step 4](http://boscdn.bpc.baidu.com/assets/lavas/codelab/lavas-2.0-sample-step4.png)
+![step 4](https://boscdn.baidu.com/assets/lavas/codelab/lavas-2.0-sample-step4.png)
 
 在进入下一个步骤之前，想一想你可以在首页添加一个链接跳往详情页吗？自己动手试试吧！

@@ -1,0 +1,35 @@
+{
+    "menu": [
+        {
+            "name": "概述",
+            "key": "introduction"
+        },
+        {
+            "name": "组件迁移",
+            "key": "components"
+        },
+        {
+            "name": "页面迁移",
+            "key": "pages"
+        },
+        {
+            "name": "数据存储迁移",
+            "key": "store"
+        },
+        {
+            "name": "PWA 相关迁移",
+            "key": "pwa"
+        },
+        {
+            "name": "其他文件的迁移",
+            "key": "others"
+        }
+    ],
+    "ignore": [],
+    "info": {
+        "name": "从 Lavas 1.0 迁移到 Lavas 2.0",
+        "description": "对于已经采用 Lavas 1.0 版本开发的应用，如何迁移到 Lavas 2.0 版本",
+        "tag": ["Lavas 1.0", "Lavas 2.0"],
+        "duration": "1小时"
+    }
+}

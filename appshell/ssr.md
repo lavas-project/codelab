@@ -2,7 +2,7 @@
 
 由于通过 `lavas init` 命令初始化的项目是采用服务端渲染 (SSR) 模式的，因此我们先关注 SSR 模式的 App Shell 。如果您想了解 SPA 模式，可以直接跳转到[这里](/codelab/service-worker/spa-mpa-config)。
 
-![SSR App Shell](http://boscdn.bpc.baidu.com/assets/lavas/codelab/appshell.png)
+![SSR App Shell](https://boscdn.baidu.com/assets/lavas/codelab/appshell.png)
 
 ## 编写 App Shell
 
@@ -33,30 +33,19 @@ export default {
 
 ## Service Worker 配置
 
-打开根目录下的 `/lavas.config.js`，找到 `serviceWorker` 段的 `appshellUrls` 配置项，做如下配置：
+打开根目录下的 `/lavas.config.js`，找到 `serviceWorker` 段的 `appshellUrl` 配置项，做如下配置：
 
 ```javascript
 module.exports = {
     // ...
     serviceWorker: {
         // other service worker config
-        appshellUrls: ['/appshell']
+        appshellUrl: '/appshell'
     },
     // ...
 };
 ```
 
-和 App Shell 有关的配置项只有一个 `appshellUrls`。如果您对其他配置项感兴趣，可以参考 Lavas 文档的 [Service Worker 部分](/guide/v2/advanced/service-worker)。这里的 `appshellUrls` 填入的是 App Shell 本身 vue 组件的可访问路径。
-
-## Service Worker 模板
-
-Service Worker 模板位于 `/core/service-worker.js`，在这里我们将注册 App Shell 的使用方式，其余 Service Worker 模板的固定内容就不再重复了。
-
-```javascript
-// Define response for HTML request.
-workboxSW.router.registerNavigationRoute('/appshell');
-```
-
-和 App Shell 相关的只有 `registerNavigationRoute` 这一句。这句的作用是将所有 HTML 请求 (`request.mode === 'navigate'`) 由 Service Worker 进行拦截，使用参数中注册的 App Shell 进行返回。这里注册的 `'/appshell'` __必须__ 包含在 Service Worker 配置项 `appshellUrls` 数组中，否则将无法注册成功。
+和 App Shell 有关的配置项只有一个 `appshellUrl`。如果您对其他配置项感兴趣，可以参考 Lavas 文档的 [Service Worker 部分](/guide/v2/advanced/service-worker)。这里的 `appshellUrl` 填入的是 App Shell 本身 vue 组件的可访问路径。
 
 经过这些配置，我们的应用已经实现了 App Shell。在首次被访问时，会将 App Shell 缓存起来，并在后续访问时直接从缓存取出并返回，大大提升了响应速度，提供更顺滑的加载体验！

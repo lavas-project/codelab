@@ -1,4 +1,4 @@
-# 5. SPA 的 Skeleton
+# 4. SPA 的 Skeleton
 
 关于骨架屏 (Skeleton) 的概念可以参考 Lavas 的知乎专栏的[为 Vue 项目添加骨架屏](https://zhuanlan.zhihu.com/p/28465598)一文，也可以参考 Lavas 文档的 [Skeleton 和 App Shell 模型](/guide/v2/advanced/appshell)。这里会列出 SPA 模式下最基本的 Skeleton 配置方法。
 
@@ -33,7 +33,7 @@ Skeleton.vue 按照普通 Vue 页面组件的开发方式进行开发即可。�
 
 通过 webpack 的构建，Skeleton.vue 的内容会直接编译到 `/dist/index.html` 中。因此针对 Service Worker 无需做什么特别的配置。
 
-尤其需要注意的是，SSR 模式使用的 `appshellUrls` __不能使用__，否则会导致 Service Worker 尝试访问这个地址并缓存，但实际上这个地址并不能访问。
+尤其需要注意的是，SSR 模式使用的 `appshellUrl` __不能使用__，否则会导致 Service Worker 尝试访问这个地址并缓存，但实际上这个地址并不能访问。
 
 ## Service Worker 模板
 

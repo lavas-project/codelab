@@ -3,7 +3,7 @@
 1. 安装/升级 Lavas 命令行工具
 
     ```bash
-    npm install lavas@lavas2 -g
+    npm install lavas -g
     ```
 
 2. 在合适的目录新建项目并命名，例如本教程中的 "lavas-2-sample"
@@ -12,7 +12,7 @@
     lavas init
     ```
 
-    ![lava init](http://boscdn.bpc.baidu.com/assets/lavas/codelab/lavas-init-3.png)
+    ![lava init](./images/lavas-init.png)
 
 3. 进入目录并安装依赖
 

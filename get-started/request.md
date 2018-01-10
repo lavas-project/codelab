@@ -28,15 +28,15 @@ export default {
         let result = await axios(`https://query.yahooapis.com/v1/public/yql?q=select%20item.condition%20from%20weather.forecast%20where%20woeid%20%3D%202151849&format=json&env=store%3A%2F%2Fdatatables.org%2Falltableswithkeys`);
         let condition = result.data.query.results.channel.item.condition;
 
-        console.log(`Weather of Shanghai: ${this.weather.text}, ${this.weather.temp}°F`);
+        console.log(`Weather of Shanghai: ${condition.text}, ${condition.temp}°F`);
     }
 };
 ```
 
 当浏览器首次访问页面 (或者在当前页面刷新) 时，Lavas 进入服务端渲染流程，因此上海的天气会打印在后端的命令行中
 
-![server](http://boscdn.bpc.baidu.com/assets/lavas/codelab/lavas-axios-server-3.png)
+![server](https://boscdn.baidu.com/assets/lavas/codelab/lavas-axios-server-3.png)
 
 而当后续访问时(例如点击页面上的链接跳转到其他详情页)，由浏览器端的 js 负责页面的跳转和渲染等，因此上海的天气会打印在浏览器的 console 中
 
-![client](http://boscdn.bpc.baidu.com/assets/lavas/codelab/lavas-axios-client-3.png)
+![client](https://boscdn.baidu.com/assets/lavas/codelab/lavas-axios-client-3.png)
