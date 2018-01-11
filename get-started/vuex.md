@@ -68,9 +68,7 @@ import {mapState} from 'vuex'
 
 export default {
     name: 'detail-_id',
-    head() {
-        // 内容省略，和第四节相同
-    },
+    // 内容省略，和第四节相同
     async asyncData({store, route}) {
         await store.dispatch('detail/setWeather', {woeid: 2151849});
     },

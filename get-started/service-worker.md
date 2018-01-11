@@ -22,7 +22,7 @@ module.exports = {
             'sw-register.js',
             '**/*.map'
         ],
-        appshellUrls: ['/appshell/main'],
+        appshellUrl: '/appshell',
         dontCacheBustUrlsMatching: /\.\w{8}\./
     },
     // ...
@@ -31,7 +31,7 @@ module.exports = {
 
 这些配置项都是必填项，具体每一项的含义和配置方法可以参考 Lavas 文档的 [Service Worker 部分](/guide/v2/advanced/service-worker)。大致来说，这里配置了 Service Worker 模板所在位置，最终 js 生成位置，预缓存静态文件的覆盖范围等等。如上的配置将 `html`, `js`, `css`, `eot`, `svg`, `ttf`, `woff` 等各类静态资源加入预缓存文件，但是将 `sw-register.js` 和 `map` 排除在外。
 
-`appshellUrls` 配置项和 App Shell 有关，这里先忽略。
+`appshellUrl` 配置项和 App Shell 有关，这里先忽略。
 
 ## Service Worker 模板
 
@@ -51,7 +51,7 @@ const workboxSW = new WorkboxSW({
 workboxSW.precache([]);
 
 // Define response for HTML request.
-workboxSW.router.registerNavigationRoute('/appshell/main');
+workboxSW.router.registerNavigationRoute('/appshell');
 ```
 
 默认情况下，Service Worker 的模板为我们完成了：

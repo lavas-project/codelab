@@ -1,8 +1,8 @@
 # 1. 概述
 
-一般来说，PWA 包含三大主要功能：桌面快捷方式，Service Worker 和消息推送。关于桌面快捷方式和 Service Worker 的基本知识我们已经在基础篇 Codelab 的 [配置 Manifest](/codelab/get-started/manifest) 和 [配置 Service Worker](/codelab/get-started/service-worker) 中进行过介绍了。这篇教程我们重点介绍一下 Lavas 的 App Shell 功能。它基于 Service Worker 实现，可以让应用拥有更加顺滑的加载体验，而不是统一的白屏。关于这部分也可以参考 Lavas 文档 [Skeleton 和 App Shell 模型](/guide/v2/advanced/appshell)，获得更多更详细的信息。
+一般来说，PWA 包含三大主要功能：桌面快捷方式，Service Worker 和消息推送。关于桌面快捷方式和 Service Worker 的基本知识我们已经在基础篇 Codelab 的 [配置 Manifest](/codelab/get-started/manifest) 和 [配置 Service Worker](/codelab/get-started/service-worker) 中进行过介绍了。这篇教程我们重点介绍一下 Lavas 的 App Shell 功能。它基于 Service Worker 实现，可以让应用拥有更加顺滑的加载体验，而不是传统的白屏。关于这部分也可以参考 Lavas 文档 [Skeleton 和 App Shell 模型](/guide/v2/advanced/appshell)，获得更多更详细的信息。
 
-![appshell](https://lavas.baidu.com/doc-assets/pwa-doc/architecture/images/appshell.png)
+![appshell](https://gss0.bdstatic.com/9rkZbzqaKgQUohGko9WTAnF6hhy/assets/lavas/codelab/appshell-744bf1ee.png)
 
 ## 通过本教程您可以学到
 
