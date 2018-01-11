@@ -47,6 +47,16 @@ build: {
 }
 ```
 
+## 引入 Stylus 源文件
+
+在样式文件中引入 Stylus 源文件而非编译好的全集 CSS 文件：
+```javascript
+// assets/stylus/main.styl
+
+// @import '~vuetify/dist/vuetify.min.css'
+@import '~vuetify/src/stylus/app'
+```
+
 ## 按需引入组件
 
 最后修改引入 Vuetify 的代码，位于 `core/app.js` 中，我们只引用使用到的 Vuetify 组件，在 AppShell 模版项目中，我们只使用到了 `VApp`，`VBtn` 和 `VIcon` 这三个组件：
@@ -71,7 +81,7 @@ Vue.use(Vuetify, {
 
 ## 最终效果
 
-让我们验证下按需加载效果，同样打开 `bundleAnalyzerReport`：
+让我们验证下按需加载效果，同样打开 `bundleAnalyzerReport` 并使用 `lavas dev` 启动开发服务器：
 ```javascript
 // lavas.config.js
 

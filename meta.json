@@ -17,6 +17,9 @@
         },
         {
             "key": "vuetify"
+        },
+        {
+            "key": "core-api"
         }
     ],
     "ignore": [
