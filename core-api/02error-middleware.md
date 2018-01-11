@@ -23,6 +23,8 @@ app.use(core.expressMiddleware());
 要进行内置中间件的替换，首先需要选取部分 Lavas 内置中间件：
 * 处理静态文件的 `static` 中间件
 * 进行服务端渲染的 `ssr` 中间件
+
+具体代码如下：
 ```javascript
 // server.dev.js
 
