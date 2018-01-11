@@ -1,0 +1,23 @@
+{
+    "menu": [
+        {
+            "name": "概述",
+            "key": "01introduction"
+        },
+        {
+            "name": "Lavas AppShell 模版项目",
+            "key": "02vuetify"
+        },
+        {
+            "name": "Vuetify 按需加载",
+            "key": "03import"
+        }
+    ],
+    "ignore": [],
+    "info": {
+        "name": "实现 Vuetify 组件的按需加载",
+        "description": "本示例功能基于 Lavas 2.0 AppShell 模版项目，将演示如何添加 Babel 插件，实现 Vuetify 组件的按需加载特性。",
+        "tag": ["Lavas 2.0", "Babel plugin", "Vuetify"],
+        "duration": "20分钟"
+    }
+}
