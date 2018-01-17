@@ -12,7 +12,7 @@
     lavas init
     ```
 
-    ![lava init](./images/lavas-init.png)
+    ![lava init](./images/lavas-init0.png)
 
 3. 进入目录并安装依赖
 

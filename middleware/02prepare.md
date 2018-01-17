@@ -14,6 +14,7 @@ npm run dev
 起服务，查看 localhost:3000 可以得到一个初始化 Lavas 首页，恭喜你第一步已经完成啦！
 
 
+
 （2）根目录下查看 `lavas.config.js` 文件，查看 router 配置项。
 
 - 初始化项目默认是开启 SSR 模式，即页面首屏渲染为服务端渲染
