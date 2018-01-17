@@ -47,19 +47,74 @@ Search.vue 是个普通页面(区别于首页和动态参数)，直接放到 `/p
 
 框架模板严格来说不属于页面，但因为也和显示相关，所以这里一并说明。
 
-Lavas 1.0 中位于 `/index.html`，在 2.0 中位于 `/core/index.html.tmpl`。2.0 中为了统一 SPA 和 SSR，这个文件已经升级为模板，同时也提供了一些快捷方法。就这个示例项目来说，我们应该把模板编写成：
+Lavas 1.0 中位于 `/index.html`，在 2.0 中位于 `/core/index.html.tmpl`。2.0 中为了统一 SPA 和 SSR，这个文件已经升级为模板。就这个示例项目来说，我们应该把模板编写成：
 
 ```html
-<html>
+<!DOCTYPE html>
+
+<% if (ssr) { %>
+<< meta = meta.inject() >>
+<html lang="zh_CN" data-vue-meta-server-rendered {{{ meta.htmlAttrs.text() }}}>
     <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <%= renderMeta() %>
-        <%= renderManifest() %>
+
+        {{{ meta.title.text() }}}
+        {{{ meta.meta.text() }}}
+        {{{ meta.link.text() }}}
+        {{{ meta.style.text() }}}
+        {{{ meta.script.text() }}}
+        {{{ meta.noscript.text() }}}
+
+        <!-- Add to home screen for Android and modern mobile browsers -->
+        <link rel="manifest" href="{{ config.build.publicPath }}static/manifest.json?v={{ config.buildVersion }}">
+        <!-- Add to home screen for Safari on iOS -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
     </head>
-    <body>
-        <%= renderEntry() %>
+    <body {{{ meta.bodyAttrs.text() }}}>
+        <!--vue-ssr-outlet-->
+        << if (isProd) { >>
+        <script>
+            window.onload = function () {
+                var script = document.createElement('script');
+                var firstScript = document.getElementsByTagName('script')[0];
+                script.type = 'text/javascript';
+                script.async = true;
+                script.src = '{{ config.build.publicPath }}sw-register.js?v=' + Date.now();
+                firstScript.parentNode.insertBefore(script, firstScript);
+            };
+        </script>
+        << } >>
     </body>
 </html>
+<% } else { %>
+<html lang="zh_CN">
+    <head>
+        <title></title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Add to home screen for Android and modern mobile browsers -->
+        <link rel="manifest" href="<<= htmlWebpackPlugin.options.config.build.publicPath >>static/manifest.json?v=<<= htmlWebpackPlugin.options.config.buildVersion >>">
+        <!-- Add to home screen for Safari on iOS -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+        << for (var jsFilePath of htmlWebpackPlugin.files.js) { >>
+            <link rel="preload" href="<<= jsFilePath >>" as="script">
+        << } >>
+        << for (var cssFilePath of htmlWebpackPlugin.files.css) { >>
+            <link rel="preload" href="<<= cssFilePath >>" as="style">
+        << } >>
+    </head>
+    <body>
+        <div id="app"></div>
+    </body>
+</html>
+<% } %>
 ```
 
 这也是 Lavas 2.0 的 `lavas init` 初始化项目的默认模板，适用于绝大部分情况。如果开发者确实有修改模板的需求，详细的信息可以参考[这里](/guide/v2/advanced/core#indexhtmltmpl)。

@@ -6,7 +6,7 @@ Lavas 和 PWA 相关的功能主要有两部分： manifest 和 Service Worker�
 
 Lavas 1.0 中，理论上 `manifest.json` 可以放在任何位置，并在 `/index.html` 中使用 `<link rel="manifest" href="some/path/to/manifest.json">` 进行引用。Lavas 初始化的项目将其放在 `/static/` 目录中。
 
-Lavas 2.0 中，`/index.html` 已经升级成为 `/core/index.html.tmpl`，并且注册 manifest.json 的工作由 Lavas 自动生成，因此要求用户 __必须__ 将其放在 `/static/manifest.json`，并且__不得更名__。
+Lavas 2.0 中，`/index.html` 已经升级成为 `/core/index.html.tmpl`，并且注册 manifest.json 的工作在这里完成。开发者可以根据自身项目的情况调整 `manifest.json` 的位置，并将其访问路径更新在这个模板的对应 `<meta>` 标签中。
 
 manifest.json 的写法在两个版本中没有差别，因此可以直接复制到对应位置。
 
