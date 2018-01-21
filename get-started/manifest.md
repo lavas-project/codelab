@@ -4,7 +4,7 @@
 
 这个功能主要针对通过移动端访问站点的用户。通过添加到手机桌面的快捷方式，用户能很便捷地调用本地浏览器直接打开站点。和普通浏览器的快捷方式不同，桌面快捷方式在打开时还包含一个启动动画，并且不包含普通浏览器的显示框架(如头部地址栏，底部菜单栏等)，使用起来就和本地安装的 APP 非常接近！
 
-要实现这个功能，本质是需要在构建后的根目录配置一个 `manifest.json`，给浏览器提供必要的信息，具体可以参见[这里](https://lavas.baidu.com/doc/engage-retain-users/add-to-home-screen/introduction)。
+要实现这个功能，本质是需要在构建后的根目录配置一个 `manifest.json`，给浏览器提供必要的信息，具体可以参见[这里](https://lavas.baidu.com/codelab/get-started/service-worker)。
 
 在 Lavas 中，我们可以通过把这个 `manifest.json` 放置在 `/static` 目录下。在构建之后，Lavas 会将它复制到正确位置，即 `/dist/manifest.json`。
 
