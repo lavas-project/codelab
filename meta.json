@@ -20,6 +20,9 @@
         },
         {
             "key": "core-api"
+        },
+        {
+            "key": "svg-loader"
         }
     ],
     "ignore": [
