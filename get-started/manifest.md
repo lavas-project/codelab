@@ -1,4 +1,4 @@
-# 7. 配置 Manifest
+# 8. 配置 Manifest
 
 一般来说，PWA 包含三大主要功能：桌面快捷方式，Service Worker 和消息推送。本节我们主要讨论如何赋予站点能够“添加到桌面快捷方式”的能力。由于 Service Worker 的内容比较灵活和复杂，因此我们单独编写了一个关于 Service Worker 的 [Codelab](/codelab/service-worker/introduction)。
 

@@ -1,4 +1,4 @@
-# 6. 使用 Vuex 管理数据
+# 7. 使用 Vuex 管理数据
 
 [Vuex](https://vuex.vuejs.org/zh-cn/) 是一个专为 Vue.js 应用程序开发的状态管理模式，一般用来管理页面的数据获取和访问。
 
