@@ -1,0 +1,27 @@
+{
+    "menu": [
+        {
+            "name": "概述",
+            "key": "01introduction"
+        },
+        {
+            "name": "vue-awesome 的安装和注册",
+            "key": "02vue-awesome"
+        },
+        {
+            "name": "编写 svg-loader",
+            "key": "03svg-loader"
+        }
+        {
+            "name": "使用自定义 SVG 图标",
+            "key": "04svg"
+        }
+    ],
+    "ignore": [],
+    "info": {
+        "name": "使用 vue-awesome 引入自定义 SVG 图标",
+        "description": "本示例功能基于 Lavas 2.0 Basic 模版项目，将演示如何编写一个简单的 Webpack Loader，实现自定义 SVG 图标的引入。",
+        "tag": ["Lavas 2.0", "Webpack Loader", "SVG Icon"],
+        "duration": "30分钟"
+    }
+}
