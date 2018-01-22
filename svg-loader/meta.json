@@ -11,7 +11,7 @@
         {
             "name": "编写 svg-loader",
             "key": "03svg-loader"
-        }
+        },
         {
             "name": "使用自定义 SVG 图标",
             "key": "04svg"
