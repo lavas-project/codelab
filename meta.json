@@ -23,6 +23,9 @@
         },
         {
             "key": "svg-loader"
+        },
+        {
+            "key": "multi-skeleton"
         }
     ],
     "ignore": [
