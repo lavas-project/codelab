@@ -57,9 +57,9 @@
 
 3. 打开 Tools - HOSTS, 添加一行 `127.0.0.1      localhost`，将 `localhost` 定向到电脑本地
 
-4. 手机和电脑连接同一个 WIFI 网络，修改手机的 WIFI 配置，找到高级设置，填入电脑的 IP 和刚才记录的端口号 (例如 `192.168.1.2:3000`)
+4. 手机和电脑连接同一个 WIFI 网络，修改手机的 WIFI 配置，找到高级设置，填入电脑的 IP 和刚才记录的端口号 (例如 `192.168.1.2:8000`)
 
-5. 打开手机中支持 PWA 特性的浏览器 (推荐 Google Chrome)，输入 URL `localohst:3000`，能够展现首页的话，在右上角菜单中也可以看到“添加到主屏幕”
+5. 打开手机中支持 PWA 特性的浏览器 (推荐 Google Chrome)，输入 URL `localohst:3000` (3000为 lavas 默认服务端口)，能够展现首页的话，在右上角菜单中也可以看到“添加到主屏幕”
 
     ![mobile-1](https://boscdn.baidu.com/assets/lavas/codelab/step7-mobile-1-2.png)
 
