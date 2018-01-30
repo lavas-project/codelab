@@ -1,4 +1,4 @@
-# 8. 编写 Service Worker
+# 9. 编写 Service Worker
 
 这一部分我们只列出一些最基本的 Service Worker 的配置方法，有关 Service Worker 更详细的介绍可以移步 Lavas 官网的[什么是 Service Worker](https://lavas.baidu.com/doc/offline-and-cache-loading/service-worker/service-worker-introduction) 和 Lavas 文档的 [Service Worker 部分](/guide/v2/advanced/service-worker)。此外由于 App Shell 模型和骨架屏 (Skeleton) 比较复杂，我们单独编写了一套 [Codelab](/codelab/appshell/introduction) 来介绍，这里就不再涉及了。
 

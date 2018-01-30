@@ -14,6 +14,8 @@
 
     ![lava init](./images/lavas-init0.png)
 
+**注意：lavas init 导出的项目默认采用的是 SSR 模式，如果想要生成纯静态文件，可以在 lavas.config.js 文件中把 ssr 改为 false**
+
 3. 进入目录并安装依赖
 
     ```bash

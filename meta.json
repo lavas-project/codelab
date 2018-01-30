@@ -20,6 +20,12 @@
         },
         {
             "key": "core-api"
+        },
+        {
+            "key": "svg-loader"
+        },
+        {
+            "key": "multi-skeleton"
         }
     ],
     "ignore": [

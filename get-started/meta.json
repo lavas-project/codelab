@@ -21,6 +21,10 @@
             "key": "request"
         },
         {
+            "name": "代理 API 请求",
+            "key": "proxy-table"
+        },
+        {
             "name": "使用 Vuex 管理数据",
             "key": "vuex"
         },
