@@ -65,11 +65,6 @@ module.exports = function (source) {
     // 监听`lavas.config.js`文件变化
     this.addDependency(lavasConfigPath);
 
-    // 从vue-awesome中导入
-    if (icons) {
-        source += icons.map(name => `import 'vue-awesome/icons/${name}';`).join('');
-    }
-
     // 从`assets/svg`文件夹中取
     fs.readdirSync(svgDir).forEach(file => {
         let svg = fs.readFileSync(path.resolve(svgDir, file), 'utf8');
