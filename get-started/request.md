@@ -16,6 +16,8 @@ import axios from 'axios';
 
 为了支持服务端渲染 (SSR) ，每个页面组件都应当能够在服务端和浏览器端正常渲染。 Lavas 给开发者暴露了 `async asyncData() ` 方法，开发者一般通过实现这个方法来完成一些渲染前的操作，例如发送请求、获取数据和简单计算等，并且这些操作是同时支持服务端和浏览器端的。在本节中，我们就在 `asyncData` 方法内实现发送请求获取数据。
 
+__注意：__ 在 Vue SSR 官方教程的[数据预期和状态](https://ssr.vuejs.org/zh/data.html)中提到，`asyncData` 方法是一个静态函数，因此无法访问 `this`。如果开发者需要在 Vue 页面或者 js 中使用数据，应当使用 `vuex` 的 `store` 进行传递，这将在本 Codelab 的后续章节提到。
+
 修改后的 `detail/_id.vue` 内容大致如下(仅 script 部分)
 
 ```javascript
