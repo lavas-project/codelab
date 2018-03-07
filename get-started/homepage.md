@@ -7,8 +7,7 @@
 pages
 ├── Error.vue
 ├── Index.vue
-└── appshell
-    └── Index.vue
+└── Appshell.vue
 ```
 
 让我们查看一下 `Index.vue`，这是一个标准的 Vue 页面组件，熟悉 Vue 开发的同学一定对它的结构相当了解：
