@@ -26,6 +26,9 @@
         },
         {
             "key": "multi-skeleton"
+        },
+        {
+            "key": "eslint"
         }
     ],
     "ignore": [

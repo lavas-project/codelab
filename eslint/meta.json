@@ -1,0 +1,27 @@
+{
+    "menu": [
+        {
+            "name": "概述",
+            "key": "01introduction"
+        },
+        {
+            "name": "安装 eslint",
+            "key": "02prepare"
+        },
+        {
+            "name": "扩展 Webpack",
+            "key": "03extend"
+        },
+        {
+            "name": "执行检查",
+            "key": "04run"
+        }
+    ],
+    "ignore": [],
+    "info": {
+        "name": "使用 ESLint 增加代码检查",
+        "description": "本示例功能基于 Lavas 2.0 Basic 模版项目，将演示如何在 Lavas 中使用代码检查工具。",
+        "tag": ["Lavas 2.0", "ESLint"],
+        "duration": "5分钟"
+    }
+}
