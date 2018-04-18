@@ -17,7 +17,6 @@ npm install --save-dev babel-plugin-transform-imports
 
 build: {
     babel: {
-        presets: ['vue-app'],
         plugins: [
             "transform-runtime",
             ["transform-imports",
@@ -28,8 +27,7 @@ build: {
                     }
                 }
             ]
-        ],
-        babelrc: false
+        ]
     }
 }
 ```
