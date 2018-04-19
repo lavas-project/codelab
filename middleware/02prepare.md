@@ -25,8 +25,10 @@ npm run dev
 ``` js
 
 module.exports = {
+    build: {
+        ssr: true // 首屏服务端渲染
+    },
     router: {
-        ssr: true, // 首屏服务端渲染
         mode: 'history',
         base: '/',
         pageTransition: {
